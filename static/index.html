@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Helpdesk Chat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem auto;
+      max-width: 700px;
+      background-color: #f4f6f8;
+      color: #333;
+    }
+    nav {
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      background-color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #007acc;
+      font-weight: bold;
+      transition: color 0.2s;
+    }
+    nav a.active, nav a:hover {
+      color: #004a80;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #222;
+    }
+    #chatContainer {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
+    }
+    #chatHistory {
+      max-height: 400px;
+      overflow-y: auto;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 0.5rem;
+      background: #fafafa;
+    }
+    .message {
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    .message.user {
+      text-align: right;
+    }
+    .message.user .bubble {
+      display: inline-block;
+      background-color: #007acc;
+      color: #fff;
+      padding: 0.5rem 0.75rem;
+      border-radius: 12px 12px 0 12px;
+      max-width: 80%;
+    }
+    .message.bot .bubble {
+      display: inline-block;
+      background-color: #e6e6e6;
+      color: #000;
+      padding: 0.5rem 0.75rem;
+      border-radius: 12px 12px 12px 0;
+      max-width: 80%;
+    }
+    #chatInputArea {
+      display: flex;
+      gap: 0.5rem;
+    }
+    #chatQuestion {
+      flex: 1;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.2s;
+    }
+    #chatQuestion:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+    #chatSendBtn {
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+    #chatSendBtn:hover {
+      background-color: #005f99;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html" class="active">Chat</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="users.html">Users</a>
+  </nav>
+
+  <h1>IT Helpdesk Chatbot</h1>
+
+  <div id="chatContainer">
+    <div id="chatHistory">
+      <!-- Messages will appear here -->
+    </div>
+    <div id="chatInputArea">
+      <textarea id="chatQuestion" rows="2" placeholder="Type your message..."></textarea>
+      <button id="chatSendBtn">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const apiBase = "";
+
+    // State for guided ticket creation
+    const chatState = {
+      mode: "rag",      // "rag" or "create_ticket" or "view_ticket"
+      step: 0,
+      ticketDraft: {}   // { issue, requester_id }
+    };
+
+    let allUsers = [];
+
+    // Utility: append a message to chat history
+    function appendMessage(sender, text) {
+      const container = document.getElementById("chatHistory");
+      const msgDiv = document.createElement("div");
+      msgDiv.classList.add("message", sender);
+      const bubble = document.createElement("div");
+      bubble.classList.add("bubble");
+      bubble.innerHTML = text.replace(/\n/g, "<br>");
+      msgDiv.appendChild(bubble);
+      container.appendChild(msgDiv);
+      container.scrollTop = container.scrollHeight;
+    }
+
+    // Get today's date in YYYY-MM-DD
+    function todayISO() {
+      return new Date().toISOString().slice(0, 10);
+    }
+
+    // Load all users to populate for requester choices
+    async function loadAllUsers() {
+      const resp = await fetch(`${apiBase}/users/`);
+      if (!resp.ok) return [];
+      allUsers = await resp.json();
+    }
+
+    // Start guided ticket creation
+    function startTicketCreation() {
+      chatState.mode = "create_ticket";
+      chatState.step = 0;
+      chatState.ticketDraft = {};
+      appendMessage("bot", "Sure! Let's create a new ticket. What is the issue?");
+    }
+
+    // Process guided ticket creation steps
+    async function handleTicketCreation(input) {
+      const trimmed = input.trim();
+      switch (chatState.step) {
+        case 0:
+          chatState.ticketDraft.issue = trimmed;
+          chatState.step = 1;
+          if (allUsers.length === 0) {
+            await loadAllUsers();
+          }
+          let userList = "Please provide the requester ID from the following list:\n";
+          allUsers.forEach(u => {
+            userList += `${u.user_id}: ${u.full_name}\n`;
+          });
+          appendMessage("bot", `<pre>${userList}</pre>`);
+          break;
+        case 1:
+          chatState.ticketDraft.requester_id = parseInt(trimmed) || null;
+          // All info collected; create the ticket with defaults
+          const payload = {
+            issue: chatState.ticketDraft.issue,
+            status: "Open",
+            resolution: null,
+            date_opened: todayISO(),
+            date_closed: null,
+            requester_id: chatState.ticketDraft.requester_id
+          };
+          try {
+            const resp = await fetch(`${apiBase}/tickets/`, {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(payload)
+            });
+            if (!resp.ok) {
+              const err = await resp.json();
+              appendMessage("bot", `Error creating ticket: ${err.detail || resp.statusText}`);
+            } else {
+              const newTicket = await resp.json();
+              appendMessage("bot", `Ticket created successfully! ID: ${newTicket.ticket_id}.`);
+            }
+          } catch (e) {
+            appendMessage("bot", `Error: ${e.message}`);
+          }
+          chatState.mode = "rag";
+          chatState.step = 0;
+          chatState.ticketDraft = {};
+          break;
+      }
+    }
+
+    // View a ticket by ID
+    async function viewTicketById(id) {
+      try {
+        const resp = await fetch(`${apiBase}/tickets/${id}`);
+        if (!resp.ok) {
+          appendMessage("bot", `Ticket ${id} not found.`);
+        } else {
+          const t = await resp.json();
+          let info = 
+            `Ticket ${t.ticket_id}\n` +
+            `Issue: ${t.issue}\n` +
+            `Status: ${t.status}\n` +
+            `Opened: ${t.date_opened}\n` +
+            `Closed: ${t.date_closed || "N/A"}\n` +
+            `Requester ID: ${t.requester_id || "N/A"}`;
+          appendMessage("bot", `<pre>${info}</pre>`);
+        }
+      } catch (e) {
+        appendMessage("bot", `Error fetching ticket: ${e.message}`);
+      }
+    }
+
+    // Default RAG-based chat
+    async function ragChat(input) {
+      appendMessage("user", input);
+      appendMessage("bot", "Thinking...");
+      try {
+        const resp = await fetch(`${apiBase}/chat`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ question: input })
+        });
+        const data = await resp.json();
+        // Remove the "Thinking..." placeholder
+        const container = document.getElementById("chatHistory");
+        container.removeChild(container.lastChild);
+
+        if (!resp.ok) {
+          appendMessage("bot", `Error: ${data.detail || resp.statusText}`);
+        } else {
+          appendMessage("bot", data.answer);
+          // Optionally show retrieved snippets
+          let snippetText = "Retrieved snippets:\n";
+          data.retrieved.forEach(rt => {
+            snippetText += `Ticket ${rt.ticket_id} (${rt.distance.toFixed(3)}): ${rt.issue} / ${rt.resolution}\n`;
+          });
+          appendMessage("bot", `<pre>${snippetText}</pre>`);
+        }
+      } catch (e) {
+        appendMessage("bot", `Error: ${e.message}`);
+      }
+    }
+
+    // Main handler for user input
+    async function handleUserInput() {
+      const inputElem = document.getElementById("chatQuestion");
+      const text = inputElem.value.trim();
+      if (!text) return;
+      inputElem.value = "";
+
+      // If currently in guided ticket creation
+      if (chatState.mode === "create_ticket") {
+        appendMessage("user", text);
+        await handleTicketCreation(text);
+        return;
+      }
+
+      // Check if user wants to create a ticket
+      if (/^create\s+(a\s+)?ticket/i.test(text)) {
+        appendMessage("user", text);
+        startTicketCreation();
+        return;
+      }
+
+      // Check if user wants to view a ticket
+      let match = text.match(/^show\s+ticket\s+(\d+)/i);
+      if (match) {
+        const id = match[1];
+        appendMessage("user", text);
+        await viewTicketById(id);
+        return;
+      }
+
+      // Otherwise, fall back to RAG chat
+      await ragChat(text);
+    }
+
+    document.addEventListener("DOMContentLoaded", async () => {
+      await loadAllUsers();
+      document.getElementById("chatSendBtn").addEventListener("click", handleUserInput);
+      document.getElementById("chatQuestion").addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && !e.shiftKey) {
+          e.preventDefault();
+          handleUserInput();
+        }
+      });
+      appendMessage("bot", "Hello! You can ask a question, type “create ticket” to open a new ticket, or “show ticket <ID>” to view details.");
+    });
+  </script>
+</body>
+</html>

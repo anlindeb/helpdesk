@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Helpdesk Tickets</title>
+  <style>
+    /* ===== Reset & Base ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== Navigation ===== */
+    nav {
+      width: 100%;
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      display: flex;
+      padding: 0.5rem 1rem;
+      gap: 1rem;
+    }
+    nav a {
+      font-weight: 600;
+      color: #007acc;
+      padding: 0.5rem;
+      transition: color 0.2s ease;
+    }
+    nav a.active, nav a:hover {
+      color: #004a80;
+    }
+
+    /* ===== Container ===== */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ===== Headings ===== */
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #222;
+      text-align: center;
+    }
+
+    /* ===== Form Styling ===== */
+    form {
+      margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #555;
+    }
+    form input[type="text"],
+    form input[type="date"],
+    form select {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.2s ease;
+    }
+    form input:focus,
+    form select:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+    form button {
+      grid-column: 1 / -1;
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      justify-self: start;
+    }
+    form button:hover {
+      background-color: #005f99;
+    }
+
+    /* ===== Filter Section ===== */
+    .filter-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+    .filter-container input[type="text"],
+    .filter-container select {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 200px;
+      transition: border-color 0.2s ease;
+    }
+    .filter-container input:focus,
+    .filter-container select:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+    .filter-container label {
+      font-weight: 600;
+      margin-right: 0.5rem;
+      color: #555;
+    }
+    #clearFiltersBtn {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    #clearFiltersBtn:hover {
+      background-color: #333;
+    }
+
+    /* ===== Table Styling ===== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    thead {
+      background-color: #007acc;
+      color: #fff;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9fbfd;
+    }
+    tbody tr:hover {
+      background-color: #e6f4ff;
+    }
+    th {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    td {
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+      .filter-container {
+        flex-direction: column;
+      }
+      .filter-container select,
+      .filter-container input[type="text"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Chat</a>
+    <a href="tickets.html" class="active">Tickets</a>
+    <a href="users.html">Users</a>
+  </nav>
+
+  <div class="container">
+    <h1>Ticket Management</h1>
+
+    <!-- Create Ticket Form -->
+    <form id="ticketForm">
+      <div>
+        <label for="issueInput">Issue:</label>
+        <input type="text" id="issueInput" placeholder="Describe the issue" required />
+      </div>
+      <div>
+        <label for="statusSelect">Status:</label>
+        <select id="statusSelect">
+          <option>Open</option>
+          <option>In Progress</option>
+          <option>Resolved</option>
+          <option>Closed</option>
+        </select>
+      </div>
+      <div>
+        <label for="dateOpenedInput">Date Opened:</label>
+        <input type="date" id="dateOpenedInput" required />
+      </div>
+      <div>
+        <label for="requesterSelect">Requester:</label>
+        <select id="requesterSelect">
+          <!-- Populated by JavaScript -->
+        </select>
+      </div>
+      <button type="submit">Create Ticket</button>
+    </form>
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+      <div>
+        <label for="filterStatus">Filter by Status:</label>
+        <select id="filterStatus">
+          <option value="">All</option>
+          <option>Open</option>
+          <option>In Progress</option>
+          <option>Resolved</option>
+          <option>Closed</option>
+        </select>
+      </div>
+      <div>
+        <label for="filterIssue">Search Issue:</label>
+        <input type="text" id="filterIssue" placeholder="Keyword ..." />
+      </div>
+      <div>
+        <label for="filterRequester">Filter by Requester:</label>
+        <select id="filterRequester">
+          <option value="">All</option>
+          <!-- Populated by JavaScript -->
+        </select>
+      </div>
+      <button id="clearFiltersBtn">Clear Filters</button>
+    </div>
+
+    <!-- Ticket List Table -->
+    <table id="ticketTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Issue</th>
+          <th>Status</th>
+          <th>Opened</th>
+          <th>Closed</th>
+          <th>Requester</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const apiBase = "";
+    let allTickets = [];
+    let allUsers = [];
+
+    function todayISO() {
+      return new Date().toISOString().slice(0, 10);
+    }
+
+    // Fetch tickets from API
+    async function fetchTickets() {
+      const resp = await fetch(`${apiBase}/tickets/`);
+      if (!resp.ok) {
+        console.error("Failed to fetch tickets");
+        return [];
+      }
+      return resp.json();
+    }
+
+    // Fetch users from API
+    async function fetchUsers() {
+      const resp = await fetch(`${apiBase}/users/`);
+      if (!resp.ok) {
+        console.error("Failed to fetch users");
+        return [];
+      }
+      return resp.json();
+    }
+
+    // Populate the "Requester" dropdowns in the form and filter
+    function populateUserDropdowns() {
+      const requesterSelect = document.getElementById("requesterSelect");
+      const filterRequester = document.getElementById("filterRequester");
+
+      requesterSelect.innerHTML = `<option value="">— select requester —</option>`;
+      filterRequester.innerHTML = `<option value="">All</option>`;
+
+      for (const u of allUsers) {
+        const opt1 = document.createElement("option");
+        opt1.value = u.user_id;
+        opt1.innerText = `${u.full_name} (${u.user_id})`;
+        requesterSelect.appendChild(opt1);
+
+        const opt2 = document.createElement("option");
+        opt2.value = u.user_id;
+        opt2.innerText = `${u.full_name} (${u.user_id})`;
+        filterRequester.appendChild(opt2);
+      }
+    }
+
+    // Render tickets into the table
+    function renderTickets(tickets) {
+      const tbody = document.querySelector("#ticketTable tbody");
+      tbody.innerHTML = "";
+      if (tickets.length === 0) {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td colspan="6" style="text-align:center; color: #777;">No tickets found.</td>`;
+        tbody.appendChild(tr);
+        return;
+      }
+      for (const t of tickets) {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${t.ticket_id}</td>
+          <td>${t.issue}</td>
+          <td>${t.status}</td>
+          <td>${t.date_opened}</td>
+          <td>${t.date_closed || ""}</td>
+          <td>${t.requester_id !== null ? t.requester_id : ""}</td>
+        `;
+        tbody.appendChild(tr);
+      }
+    }
+
+    // Apply filters to allTickets and re-render
+    function applyFilters() {
+      const statusFilter = document.getElementById("filterStatus").value.trim();
+      const issueFilter = document.getElementById("filterIssue").value.trim().toLowerCase();
+      const reqFilter = document.getElementById("filterRequester").value.trim();
+
+      const filtered = allTickets.filter(t => {
+        const matchesStatus = statusFilter === "" || t.status === statusFilter;
+        const matchesIssue = issueFilter === "" || t.issue.toLowerCase().includes(issueFilter);
+        const matchesReq = reqFilter === "" || (t.requester_id !== null && t.requester_id.toString() === reqFilter);
+        return matchesStatus && matchesIssue && matchesReq;
+      });
+      renderTickets(filtered);
+    }
+
+    // Load all users and then all tickets
+    async function loadAllUsersAndTickets() {
+      allUsers = await fetchUsers();
+      populateUserDropdowns();
+      allTickets = await fetchTickets();
+      renderTickets(allTickets);
+    }
+
+    // Handle ticket creation
+    async function createTicket(event) {
+      event.preventDefault();
+      const issue = document.getElementById("issueInput").value.trim();
+      const status = document.getElementById("statusSelect").value;
+      const dateOpened = document.getElementById("dateOpenedInput").value;
+      const requesterId = document.getElementById("requesterSelect").value || null;
+      if (!issue || !dateOpened) return;
+
+      const payload = {
+        issue: issue,
+        status: status,
+        resolution: null,
+        date_opened: dateOpened,
+        date_closed: null,
+        requester_id: requesterId ? parseInt(requesterId) : null
+      };
+      const resp = await fetch(`${apiBase}/tickets/`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      if (resp.ok) {
+        document.getElementById("ticketForm").reset();
+        document.getElementById("dateOpenedInput").value = todayISO();
+        loadAllUsersAndTickets();
+      } else {
+        alert("Failed to create ticket");
+      }
+    }
+
+    // Clear all filters and show full list
+    function clearFilters() {
+      document.getElementById("filterStatus").value = "";
+      document.getElementById("filterIssue").value = "";
+      document.getElementById("filterRequester").value = "";
+      renderTickets(allTickets);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      // Initialize date input
+      document.getElementById("dateOpenedInput").value = todayISO();
+
+      // Hook up form submission
+      document.getElementById("ticketForm").addEventListener("submit", createTicket);
+
+      // Hook up filter inputs
+      document.getElementById("filterStatus").addEventListener("change", applyFilters);
+      document.getElementById("filterIssue").addEventListener("input", applyFilters);
+      document.getElementById("filterRequester").addEventListener("change", applyFilters);
+      document.getElementById("clearFiltersBtn").addEventListener("click", clearFilters);
+
+      // Load data
+      loadAllUsersAndTickets();
+    });
+  </script>
+</body>
+</html>

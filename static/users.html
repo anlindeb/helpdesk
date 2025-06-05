@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Helpdesk Users</title>
+  <style>
+    /* ===== Reset & Base ===== */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      color: #333;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ===== Navigation ===== */
+    nav {
+      width: 100%;
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
+      display: flex;
+      padding: 0.5rem 1rem;
+      gap: 1rem;
+    }
+    nav a {
+      font-weight: 600;
+      color: #007acc;
+      padding: 0.5rem;
+      transition: color 0.2s ease;
+    }
+    nav a.active, nav a:hover {
+      color: #004a80;
+    }
+
+    /* ===== Container ===== */
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    /* ===== Headings ===== */
+    h1 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #222;
+      text-align: center;
+    }
+
+    /* ===== Form Styling ===== */
+    form {
+      margin-bottom: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    form label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+      color: #555;
+    }
+    form input[type="text"] {
+      width: 100%;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      transition: border-color 0.2s ease;
+    }
+    form input:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+    form button {
+      grid-column: 1 / -1;
+      background-color: #007acc;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      justify-self: start;
+    }
+    form button:hover {
+      background-color: #005f99;
+    }
+
+    /* ===== Filter Section ===== */
+    .filter-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      align-items: center;
+    }
+    .filter-container input[type="text"],
+    .filter-container select {
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 200px;
+      transition: border-color 0.2s ease;
+    }
+    .filter-container input:focus,
+    .filter-container select:focus {
+      border-color: #007acc;
+      outline: none;
+    }
+    .filter-container label {
+      font-weight: 600;
+      margin-right: 0.5rem;
+      color: #555;
+    }
+    #clearFiltersBtn {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    #clearFiltersBtn:hover {
+      background-color: #333;
+    }
+
+    /* ===== Table Styling ===== */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    thead {
+      background-color: #007acc;
+      color: #fff;
+    }
+    th, td {
+      padding: 0.75rem;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    tbody tr:nth-child(even) {
+      background-color: #f9fbfd;
+    }
+    tbody tr:hover {
+      background-color: #e6f4ff;
+    }
+    th {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    td {
+      font-size: 0.9rem;
+      color: #333;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      form {
+        grid-template-columns: 1fr;
+      }
+      .filter-container {
+        flex-direction: column;
+      }
+      .filter-container select,
+      .filter-container input[type="text"] {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Chat</a>
+    <a href="tickets.html">Tickets</a>
+    <a href="users.html" class="active">Users</a>
+  </nav>
+
+  <div class="container">
+    <h1>User Management</h1>
+
+    <!-- Create User Form -->
+    <form id="userForm">
+      <div>
+        <label for="fullNameInput">Full Name:</label>
+        <input type="text" id="fullNameInput" placeholder="e.g. Alice Johnson" required />
+      </div>
+      <div>
+        <label for="emailInput">Email:</label>
+        <input type="text" id="emailInput" placeholder="e.g. alice@example.com" required />
+      </div>
+      <div>
+        <label for="departmentInput">Department:</label>
+        <input type="text" id="departmentInput" placeholder="e.g. IT" required />
+      </div>
+      <button type="submit">Create User</button>
+    </form>
+
+    <!-- Filter Section -->
+    <div class="filter-container">
+      <div>
+        <label for="filterDepartment">Filter by Department:</label>
+        <select id="filterDepartment">
+          <option value="">All</option>
+          <option>IT</option>
+          <option>HR</option>
+          <option>Finance</option>
+          <option>Marketing</option>
+          <option>Sales</option>
+          <option>Support</option>
+          <option>R&D</option>
+        </select>
+      </div>
+      <div>
+        <label for="filterName">Search Name:</label>
+        <input type="text" id="filterName" placeholder="Keyword ..." />
+      </div>
+      <button id="clearFiltersBtn">Clear Filters</button>
+    </div>
+
+    <!-- User List Table -->
+    <table id="userTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Department</th>
+          <th>Created At</th>
+          <th># Tickets</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Populated by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    const apiBase = "";
+    let allUsers = [];
+    let allTickets = [];
+
+    async function fetchUsers() {
+      const resp = await fetch(`${apiBase}/users/`);
+      if (!resp.ok) {
+        console.error("Failed to fetch users");
+        return [];
+      }
+      return resp.json();
+    }
+
+    async function fetchTickets() {
+      const resp = await fetch(`${apiBase}/tickets/`);
+      if (!resp.ok) {
+        console.error("Failed to fetch tickets");
+        return [];
+      }
+      return resp.json();
+    }
+
+    function renderUsers(users) {
+      // Build user_id → ticketCount map
+      const countMap = {};
+      for (const t of allTickets) {
+        if (t.requester_id) {
+          countMap[t.requester_id] = (countMap[t.requester_id] || 0) + 1;
+        }
+      }
+
+      const tbody = document.querySelector("#userTable tbody");
+      tbody.innerHTML = "";
+      if (users.length === 0) {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `<td colspan="6" style="text-align:center; color: #777;">No users found.</td>`;
+        tbody.appendChild(tr);
+        return;
+      }
+      for (const u of users) {
+        const ticketCount = countMap[u.user_id] || 0;
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+          <td>${u.user_id}</td>
+          <td>${u.full_name}</td>
+          <td>${u.email}</td>
+          <td>${u.department}</td>
+          <td>${u.created_at}</td>
+          <td>${ticketCount}</td>
+        `;
+        tbody.appendChild(tr);
+      }
+    }
+
+    function applyFilters() {
+      const deptFilter = document.getElementById("filterDepartment").value.trim();
+      const nameFilter = document.getElementById("filterName").value.trim().toLowerCase();
+
+      const filtered = allUsers.filter(u => {
+        const matchesDept = deptFilter === "" || u.department === deptFilter;
+        const matchesName = nameFilter === "" || u.full_name.toLowerCase().includes(nameFilter);
+        return matchesDept && matchesName;
+      });
+      renderUsers(filtered);
+    }
+
+    async function loadAllUsersAndTickets() {
+      allUsers = await fetchUsers();
+      allTickets = await fetchTickets();
+      renderUsers(allUsers);
+    }
+
+    async function createUser(event) {
+      event.preventDefault();
+      const fullName = document.getElementById("fullNameInput").value.trim();
+      const email = document.getElementById("emailInput").value.trim();
+      const department = document.getElementById("departmentInput").value.trim();
+      if (!fullName || !email || !department) return;
+
+      const payload = { full_name: fullName, email: email, department: department };
+      const resp = await fetch(`${apiBase}/users/`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      });
+      if (resp.ok) {
+        document.getElementById("userForm").reset();
+        loadAllUsersAndTickets();
+      } else {
+        alert("Failed to create user");
+      }
+    }
+
+    function clearFilters() {
+      document.getElementById("filterDepartment").value = "";
+      document.getElementById("filterName").value = "";
+      renderUsers(allUsers);
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("userForm").addEventListener("submit", createUser);
+      document.getElementById("filterDepartment").addEventListener("change", applyFilters);
+      document.getElementById("filterName").addEventListener("input", applyFilters);
+      document.getElementById("clearFiltersBtn").addEventListener("click", clearFilters);
+      loadAllUsersAndTickets();
+    });
+  </script>
+</body>
+</html>

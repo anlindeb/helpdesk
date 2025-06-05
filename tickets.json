@@ -1,0 +1,2002 @@
+[
+  {
+    "TicketID": 1001,
+    "Issue": "Mailing list not receiving emails.",
+    "Status": "Closed",
+    "Resolution": "Fixed mailing list configuration, emails now delivered.",
+    "DateOpened": "2024-02-13",
+    "DateClosed": "2024-02-19"
+  },
+  {
+    "TicketID": 1002,
+    "Issue": "Quentin reports: Important email going to spam.",
+    "Status": "Closed",
+    "Resolution": "Adjusted spam filter settings and whitelisted sender.",
+    "DateOpened": "2024-03-18",
+    "DateClosed": "2024-03-25"
+  },
+  {
+    "TicketID": 1003,
+    "Issue": "Password manager access request.",
+    "Status": "Closed",
+    "Resolution": "Created user account in password manager tool.",
+    "DateOpened": "2023-05-10",
+    "DateClosed": "2023-05-11"
+  },
+  {
+    "TicketID": 1004,
+    "Issue": "Remote server RDP not accessible.",
+    "Status": "Closed",
+    "Resolution": "Opened required port in firewall, RDP now reachable.",
+    "DateOpened": "2024-07-16",
+    "DateClosed": "2024-07-18"
+  },
+  {
+    "TicketID": 1005,
+    "Issue": "User Alice: Slack notifications not working.",
+    "Status": "Closed",
+    "Resolution": "Cleared app cache and reinstalled, notifications working.",
+    "DateOpened": "2024-11-30",
+    "DateClosed": "2024-12-03"
+  },
+  {
+    "TicketID": 1006,
+    "Issue": "User forgot password. Account locked due to failed attempts.",
+    "Status": "Closed",
+    "Resolution": "Reset user's password and unlocked account.",
+    "DateOpened": "2023-09-22",
+    "DateClosed": "2023-09-22"
+  },
+  {
+    "TicketID": 1007,
+    "Issue": "User Kevin: Account keeps locking out.",
+    "Status": "Closed",
+    "Resolution": "Found old phone with stale credentials causing lock, removed it.",
+    "DateOpened": "2024-08-01",
+    "DateClosed": "2024-08-05"
+  },
+  {
+    "TicketID": 1008,
+    "Issue": "User cannot access HR system.",
+    "Status": "Closed",
+    "Resolution": "Granted HR system access.",
+    "DateOpened": "2023-02-07",
+    "DateClosed": "2023-02-15"
+  },
+  {
+    "TicketID": 1009,
+    "Issue": "User Bob: Laptop fan not spinning.",
+    "Status": "Closed",
+    "Resolution": "Replaced faulty fan, PC temperature normal.",
+    "DateOpened": "2024-12-21",
+    "DateClosed": "2025-01-06"
+  },
+  {
+    "TicketID": 1010,
+    "Issue": "Software freeze on specific action.",
+    "Status": "Closed",
+    "Resolution": "Updated software to latest version, issue resolved.",
+    "DateOpened": "2024-11-16",
+    "DateClosed": "2024-11-19"
+  },
+  {
+    "TicketID": 1011,
+    "Issue": "User cannot access shared drive.",
+    "Status": "Closed",
+    "Resolution": "Permissions issue, added user to correct group, regained access.",
+    "DateOpened": "2024-02-24",
+    "DateClosed": "2024-03-06"
+  },
+  {
+    "TicketID": 1012,
+    "Issue": "Employee Alice forgot login password.",
+    "Status": "Closed",
+    "Resolution": "Reset password and unlocked account.",
+    "DateOpened": "2023-06-04",
+    "DateClosed": "2023-06-04"
+  },
+  {
+    "TicketID": 1013,
+    "Issue": "User Steve: WiFi dropping intermittently.",
+    "Status": "Closed",
+    "Resolution": "Moved user to closer access point, updated WiFi drivers.",
+    "DateOpened": "2024-07-26",
+    "DateClosed": "2024-08-08"
+  },
+  {
+    "TicketID": 1014,
+    "Issue": "Project management tool glitch.",
+    "Status": "Closed",
+    "Resolution": "Cleared app cache and updated to latest version.",
+    "DateOpened": "2023-01-15",
+    "DateClosed": "2023-01-21"
+  },
+  {
+    "TicketID": 1015,
+    "Issue": "Mailing list not receiving emails.",
+    "Status": "Closed",
+    "Resolution": "Fixed mailing list configuration, emails now delivered.",
+    "DateOpened": "2024-09-01",
+    "DateClosed": "2024-09-04"
+  },
+  {
+    "TicketID": 1016,
+    "Issue": "Software UI glitch in internal app.",
+    "Status": "Closed",
+    "Resolution": "Cleared user cache and settings, UI glitch resolved.",
+    "DateOpened": "2023-12-07",
+    "DateClosed": "2023-12-09"
+  },
+  {
+    "TicketID": 1017,
+    "Issue": "Access card not working.",
+    "Status": "Closed",
+    "Resolution": "Reactivated user's access card in security system.",
+    "DateOpened": "2023-03-26",
+    "DateClosed": "2023-04-07"
+  },
+  {
+    "TicketID": 1018,
+    "Issue": "Laptop battery not charging.",
+    "Status": "Closed",
+    "Resolution": "Replaced defective charger, battery charges correctly.",
+    "DateOpened": "2024-06-22",
+    "DateClosed": "2024-06-28"
+  },
+  {
+    "TicketID": 1019,
+    "Issue": "Cannot save to network folder.",
+    "Status": "Closed",
+    "Resolution": "Corrected folder permissions, user can save now.",
+    "DateOpened": "2023-07-27",
+    "DateClosed": "2023-08-06"
+  },
+  {
+    "TicketID": 1020,
+    "Issue": "Old PC replacement request.",
+    "Status": "Closed",
+    "Resolution": "Deployed new PC and transferred user data.",
+    "DateOpened": "2023-10-16",
+    "DateClosed": "2023-10-23"
+  },
+  {
+    "TicketID": 1021,
+    "Issue": "Laptop doesn't go to sleep.",
+    "Status": "Closed",
+    "Resolution": "Adjusted power plan and updated device drivers, sleep mode works.",
+    "DateOpened": "2023-04-01",
+    "DateClosed": "2023-04-05"
+  },
+  {
+    "TicketID": 1022,
+    "Issue": "Printer out of toner.",
+    "Status": "Closed",
+    "Resolution": "Replaced toner cartridge, printer operational.",
+    "DateOpened": "2024-03-08",
+    "DateClosed": "2024-03-12"
+  },
+  {
+    "TicketID": 1023,
+    "Issue": "User spilled coffee on keyboard.",
+    "Status": "Closed",
+    "Resolution": "Replaced keyboard, advised user on liquid caution.",
+    "DateOpened": "2023-06-15",
+    "DateClosed": "2023-06-20"
+  },
+  {
+    "TicketID": 1024,
+    "Issue": "User profile corrupt on Windows.",
+    "Status": "Closed",
+    "Resolution": "Renamed old profile, Windows created new one, migrated files.",
+    "DateOpened": "2023-09-11",
+    "DateClosed": "2023-09-20"
+  },
+  {
+    "TicketID": 1025,
+    "Issue": "User Laura: Cannot connect to projector wirelessly.",
+    "Status": "Closed",
+    "Resolution": "Updated wireless display adapter firmware.",
+    "DateOpened": "2024-08-10",
+    "DateClosed": "2024-08-17"
+  },
+  {
+    "TicketID": 1026,
+    "Issue": "Laptop screen cracked.",
+    "Status": "Closed",
+    "Resolution": "Replaced screen.",
+    "DateOpened": "2023-05-22",
+    "DateClosed": "2023-06-08"
+  },
+  {
+    "TicketID": 1027,
+    "Issue": "Password manager access request.",
+    "Status": "Closed",
+    "Resolution": "Created user account in password manager tool.",
+    "DateOpened": "2024-10-30",
+    "DateClosed": "2024-10-31"
+  },
+  {
+    "TicketID": 1028,
+    "Issue": "Frequent video call drops.",
+    "Status": "Closed",
+    "Resolution": "Updated NIC drivers and firmware, improved call stability.",
+    "DateOpened": "2024-11-18",
+    "DateClosed": "2024-11-24"
+  },
+  {
+    "TicketID": 1029,
+    "Issue": "User Tina: Desktop computer not booting.",
+    "Status": "Closed",
+    "Resolution": "Power cable was unplugged; reconnected cable and booted successfully.",
+    "DateOpened": "2024-05-26",
+    "DateClosed": "2024-06-04"
+  },
+  {
+    "TicketID": 1030,
+    "Issue": "User cannot open email attachments in Outlook.",
+    "Status": "Closed",
+    "Resolution": "Cleared Outlook temp files, attachments open now.",
+    "DateOpened": "2024-02-11",
+    "DateClosed": "2024-02-11"
+  },
+  {
+    "TicketID": 1031,
+    "Issue": "User Hannah: Account disabled after leave.",
+    "Status": "Resolved",
+    "Resolution": "Re-enabled user account and reset password.",
+    "DateOpened": "2024-03-27",
+    "DateClosed": "2024-04-02"
+  },
+  {
+    "TicketID": 1032,
+    "Issue": "Tool access request (project management app).",
+    "Status": "Resolved",
+    "Resolution": "Added user to project management tool with proper role.",
+    "DateOpened": "2023-03-05",
+    "DateClosed": "2023-03-17"
+  },
+  {
+    "TicketID": 1033,
+    "Issue": "Request for admin permissions for software.",
+    "Status": "Resolved",
+    "Resolution": "Granted temporary admin rights after approval, then revoked.",
+    "DateOpened": "2023-08-23",
+    "DateClosed": "2023-09-01"
+  },
+  {
+    "TicketID": 1034,
+    "Issue": "Access to team shared folder needed.",
+    "Status": "Resolved",
+    "Resolution": "Added user to folder permissions group, access granted.",
+    "DateOpened": "2024-01-10",
+    "DateClosed": "2024-01-12"
+  },
+  {
+    "TicketID": 1035,
+    "Issue": "Scheduled task failed on server.",
+    "Status": "Resolved",
+    "Resolution": "Fixed script path and credentials, task runs successfully.",
+    "DateOpened": "2024-02-14",
+    "DateClosed": "2024-02-20"
+  },
+  {
+    "TicketID": 1036,
+    "Issue": "Laptop battery recall (battery issue).",
+    "Status": "Resolved",
+    "Resolution": "Replaced battery under recall program.",
+    "DateOpened": "2024-06-19",
+    "DateClosed": "2024-07-03"
+  },
+  {
+    "TicketID": 1037,
+    "Issue": "External monitor not detected.",
+    "Status": "Resolved",
+    "Resolution": "Updated graphics driver, reconnected cable.",
+    "DateOpened": "2024-05-02",
+    "DateClosed": "2024-05-05"
+  },
+  {
+    "TicketID": 1038,
+    "Issue": "Employee Paula cannot hear audio on calls.",
+    "Status": "Resolved",
+    "Resolution": "Set correct audio output device, user can hear now.",
+    "DateOpened": "2024-03-22",
+    "DateClosed": "2024-03-30"
+  },
+  {
+    "TicketID": 1039,
+    "Issue": "User Kevin: Chat app notifications not popping up.",
+    "Status": "Resolved",
+    "Resolution": "Cleared app cache and reinstalled, notifications working.",
+    "DateOpened": "2023-07-08",
+    "DateClosed": "2023-07-08"
+  },
+  {
+    "TicketID": 1040,
+    "Issue": "Server maintenance and patching needed.",
+    "Status": "Resolved",
+    "Resolution": "Scheduled maintenance window, applied updates, rebooted server.",
+    "DateOpened": "2024-09-26",
+    "DateClosed": "2024-10-06"
+  },
+  {
+    "TicketID": 1041,
+    "Issue": "Two-factor token lost.",
+    "Status": "Resolved",
+    "Resolution": "Reset 2FA token and provided backup code.",
+    "DateOpened": "2024-04-11",
+    "DateClosed": "2024-04-13"
+  },
+  {
+    "TicketID": 1042,
+    "Issue": "User cannot connect to network drive.",
+    "Status": "Resolved",
+    "Resolution": "Remapped network drive with correct path, user can access files.",
+    "DateOpened": "2024-06-08",
+    "DateClosed": "2024-06-08"
+  },
+  {
+    "TicketID": 1043,
+    "Issue": "Account locked out frequently.",
+    "Status": "Resolved",
+    "Resolution": "Discovered mapped drive using old creds, updated credentials.",
+    "DateOpened": "2023-06-10",
+    "DateClosed": "2023-06-13"
+  },
+  {
+    "TicketID": 1044,
+    "Issue": "Frequent BSOD on laptop.",
+    "Status": "Resolved",
+    "Resolution": "Ran diagnostics, replaced faulty RAM module.",
+    "DateOpened": "2024-07-20",
+    "DateClosed": "2024-08-09"
+  },
+  {
+    "TicketID": 1045,
+    "Issue": "Laptop not booting.",
+    "Status": "Resolved",
+    "Resolution": "Laptop battery dead, replaced battery.",
+    "DateOpened": "2023-05-19",
+    "DateClosed": "2023-05-24"
+  },
+  {
+    "TicketID": 1046,
+    "Issue": "Laptop keyboard unresponsive.",
+    "Status": "Resolved",
+    "Resolution": "Reseated keyboard connector, keys working again.",
+    "DateOpened": "2023-02-09",
+    "DateClosed": "2023-02-10"
+  },
+  {
+    "TicketID": 1047,
+    "Issue": "Software UI glitch in internal app.",
+    "Status": "Resolved",
+    "Resolution": "Cleared user cache and settings, UI glitch resolved.",
+    "DateOpened": "2024-10-12",
+    "DateClosed": "2024-10-17"
+  },
+  {
+    "TicketID": 1048,
+    "Issue": "Blue screen error on startup.",
+    "Status": "Resolved",
+    "Resolution": "Ran memory test, replaced faulty RAM.",
+    "DateOpened": "2023-04-25",
+    "DateClosed": "2023-05-04"
+  },
+  {
+    "TicketID": 1049,
+    "Issue": "Request for admin permissions for software.",
+    "Status": "Resolved",
+    "Resolution": "Granted temporary admin rights after approval, then revoked.",
+    "DateOpened": "2024-09-08",
+    "DateClosed": "2024-09-21"
+  },
+  {
+    "TicketID": 1050,
+    "Issue": "User Bob: Laptop audio not working.",
+    "Status": "Resolved",
+    "Resolution": "Updated audio drivers, audio functioning again.",
+    "DateOpened": "2024-05-13",
+    "DateClosed": "2024-05-18"
+  },
+  {
+    "TicketID": 1051,
+    "Issue": "Laptop fan excessively loud.",
+    "Status": "Resolved",
+    "Resolution": "Cleaned out dust from fan, noise reduced significantly.",
+    "DateOpened": "2024-01-26",
+    "DateClosed": "2024-02-08"
+  },
+  {
+    "TicketID": 1052,
+    "Issue": "Outlook search returns no results.",
+    "Status": "Resolved",
+    "Resolution": "Reindexed Outlook mailbox, search working now.",
+    "DateOpened": "2023-03-13",
+    "DateClosed": "2023-03-16"
+  },
+  {
+    "TicketID": 1053,
+    "Issue": "Time tracking software login fails.",
+    "Status": "Resolved",
+    "Resolution": "Reset user account on time tracking system, login works.",
+    "DateOpened": "2024-04-18",
+    "DateClosed": "2024-04-20"
+  },
+  {
+    "TicketID": 1054,
+    "Issue": "Printer output faded.",
+    "Status": "Resolved",
+    "Resolution": "Replaced low toner and cleaned printer heads.",
+    "DateOpened": "2024-06-16",
+    "DateClosed": "2024-06-17"
+  },
+  {
+    "TicketID": 1055,
+    "Issue": "Employee Nina cannot print double-sided.",
+    "Status": "Resolved",
+    "Resolution": "Configured printer settings, updated driver, duplex now works.",
+    "DateOpened": "2024-01-17",
+    "DateClosed": "2024-01-19"
+  },
+  {
+    "TicketID": 1056,
+    "Issue": "Network drive mapping lost after reboot.",
+    "Status": "Resolved",
+    "Resolution": "Created login script to remap drive at startup.",
+    "DateOpened": "2023-11-24",
+    "DateClosed": "2023-11-29"
+  },
+  {
+    "TicketID": 1057,
+    "Issue": "Software out-of-memory error.",
+    "Status": "Resolved",
+    "Resolution": "Added RAM and increased virtual memory, resolved error.",
+    "DateOpened": "2024-07-03",
+    "DateClosed": "2024-07-14"
+  },
+  {
+    "TicketID": 1058,
+    "Issue": "Laptop camera blurry.",
+    "Status": "Resolved",
+    "Resolution": "Replaced laptop webcam under warranty.",
+    "DateOpened": "2024-02-26",
+    "DateClosed": "2024-03-08"
+  },
+  {
+    "TicketID": 1059,
+    "Issue": "Laptop won't output to dual monitors.",
+    "Status": "Resolved",
+    "Resolution": "Installed updated GPU drivers, dual monitors working.",
+    "DateOpened": "2023-12-15",
+    "DateClosed": "2023-12-21"
+  },
+  {
+    "TicketID": 1060,
+    "Issue": "Employee Mike cannot open encrypted email.",
+    "Status": "Resolved",
+    "Resolution": "Installed S/MIME certificate for user, email opens.",
+    "DateOpened": "2024-03-09",
+    "DateClosed": "2024-03-15"
+  },
+  {
+    "TicketID": 1061,
+    "Issue": "Employee Bob cannot access intranet site.",
+    "Status": "Resolved",
+    "Resolution": "Added user to SharePoint access group.",
+    "DateOpened": "2023-10-04",
+    "DateClosed": "2023-10-13"
+  },
+  {
+    "TicketID": 1062,
+    "Issue": "Software not launching.",
+    "Status": "Resolved",
+    "Resolution": "Reset config files and reinstalled software, launches now.",
+    "DateOpened": "2023-08-17",
+    "DateClosed": "2023-08-21"
+  },
+  {
+    "TicketID": 1063,
+    "Issue": "Mobile phone email not set up.",
+    "Status": "Resolved",
+    "Resolution": "Configured company email on user's phone via Exchange.",
+    "DateOpened": "2024-08-21",
+    "DateClosed": "2024-08-22"
+  },
+  {
+    "TicketID": 1064,
+    "Issue": "VPN disconnects frequently.",
+    "Status": "Resolved",
+    "Resolution": "Adjusted VPN client settings and server timeouts, stable connection.",
+    "DateOpened": "2024-09-17",
+    "DateClosed": "2024-09-20"
+  },
+  {
+    "TicketID": 1065,
+    "Issue": "Recurring printer jam issues.",
+    "Status": "Resolved",
+    "Resolution": "Scheduled regular maintenance and replaced rollers.",
+    "DateOpened": "2024-01-23",
+    "DateClosed": "2024-02-05"
+  },
+  {
+    "TicketID": 1066,
+    "Issue": "User Julia: WiFi network slow in conference room.",
+    "Status": "Resolved",
+    "Resolution": "Added an extra access point, balanced network load.",
+    "DateOpened": "2024-02-28",
+    "DateClosed": "2024-03-03"
+  },
+  {
+    "TicketID": 1067,
+    "Issue": "Zoom screen sharing fails.",
+    "Status": "Resolved",
+    "Resolution": "Gave app screen recording permissions, updated Zoom, works now.",
+    "DateOpened": "2023-11-13",
+    "DateClosed": "2023-11-17"
+  },
+  {
+    "TicketID": 1068,
+    "Issue": "Backup failed (nightly backup did not complete).",
+    "Status": "Resolved",
+    "Resolution": "Checked backup server, found config error, corrected and reran backup.",
+    "DateOpened": "2023-07-12",
+    "DateClosed": "2023-07-24"
+  },
+  {
+    "TicketID": 1069,
+    "Issue": "Office phone not working (no dial tone).",
+    "Status": "Resolved",
+    "Resolution": "Checked VoIP configuration, rebooted phone, service restored.",
+    "DateOpened": "2024-11-05",
+    "DateClosed": "2024-11-14"
+  },
+  {
+    "TicketID": 1070,
+    "Issue": "User can't connect to FTP server.",
+    "Status": "Resolved",
+    "Resolution": "Updated FTP client settings and opened firewall ports, connection established.",
+    "DateOpened": "2023-09-25",
+    "DateClosed": "2023-10-03"
+  },
+  {
+    "TicketID": 1071,
+    "Issue": "Access to former employee's email needed.",
+    "Status": "Resolved",
+    "Resolution": "Granted manager access to departed user's mailbox.",
+    "DateOpened": "2023-03-20",
+    "DateClosed": "2023-03-29"
+  },
+  {
+    "TicketID": 1072,
+    "Issue": "User Julia: Outlook not syncing email.",
+    "Status": "Resolved",
+    "Resolution": "Reconfigured mail profile, reconnected to server, fixed sync issue.",
+    "DateOpened": "2024-02-01",
+    "DateClosed": "2024-02-04"
+  },
+  {
+    "TicketID": 1073,
+    "Issue": "Plugin not loading in software.",
+    "Status": "Resolved",
+    "Resolution": "Re-registered plugin DLL, plugin now loads properly.",
+    "DateOpened": "2023-05-06",
+    "DateClosed": "2023-05-10"
+  },
+  {
+    "TicketID": 1074,
+    "Issue": "User Paula: Touchpad gestures disabled.",
+    "Status": "Resolved",
+    "Resolution": "Enabled gestures in driver settings.",
+    "DateOpened": "2023-11-11",
+    "DateClosed": "2023-11-21"
+  },
+  {
+    "TicketID": 1075,
+    "Issue": "Laptop case screw missing.",
+    "Status": "Resolved",
+    "Resolution": "Replaced missing screw to secure laptop.",
+    "DateOpened": "2024-12-19",
+    "DateClosed": "2024-12-24"
+  },
+  {
+    "TicketID": 1076,
+    "Issue": "Employee Ian cannot access HR system.",
+    "Status": "Resolved",
+    "Resolution": "Granted HR system access.",
+    "DateOpened": "2023-04-15",
+    "DateClosed": "2023-04-19"
+  },
+  {
+    "TicketID": 1077,
+    "Issue": "User Tina: Recurring BSOD occurrences.",
+    "Status": "Resolved",
+    "Resolution": "Ran diagnostics, replaced faulty RAM module.",
+    "DateOpened": "2024-05-29",
+    "DateClosed": "2024-06-17"
+  },
+  {
+    "TicketID": 1078,
+    "Issue": "User cannot print to network printer in Finance department. Printer showing offline.",
+    "Status": "Resolved",
+    "Resolution": "Printer was turned off; turned it on and configured driver, now working.",
+    "DateOpened": "2023-06-29",
+    "DateClosed": "2023-07-03"
+  },
+  {
+    "TicketID": 1079,
+    "Issue": "Out-of-office reply not sending.",
+    "Status": "Resolved",
+    "Resolution": "Reconfigured automatic replies, now working properly.",
+    "DateOpened": "2024-08-29",
+    "DateClosed": "2024-09-07"
+  },
+  {
+    "TicketID": 1080,
+    "Issue": "User cannot print specific PDF file.",
+    "Status": "Resolved",
+    "Resolution": "Installed PDF reader update and printed as image, problem solved.",
+    "DateOpened": "2024-03-04",
+    "DateClosed": "2024-03-04"
+  },
+  {
+    "TicketID": 1081,
+    "Issue": "Laptop out-of-warranty repair needed.",
+    "Status": "Resolved",
+    "Resolution": "Coordinated with vendor for repair, provided loaner laptop.",
+    "DateOpened": "2024-01-05",
+    "DateClosed": "2024-01-16"
+  },
+  {
+    "TicketID": 1082,
+    "Issue": "User Steve: Laptop case broken hinge.",
+    "Status": "Resolved",
+    "Resolution": "Sent laptop for repair, replaced top cover and hinges.",
+    "DateOpened": "2024-07-08",
+    "DateClosed": "2024-07-14"
+  },
+  {
+    "TicketID": 1083,
+    "Issue": "Intermittent freezing on computer.",
+    "Status": "Resolved",
+    "Resolution": "Checked event logs, updated graphics driver, fixed freezing.",
+    "DateOpened": "2023-08-09",
+    "DateClosed": "2023-08-15"
+  },
+  {
+    "TicketID": 1084,
+    "Issue": "Employee Nina cannot access shared drive.",
+    "Status": "Resolved",
+    "Resolution": "Permissions issue, added user to correct group, regained access.",
+    "DateOpened": "2023-10-21",
+    "DateClosed": "2023-10-23"
+  },
+  {
+    "TicketID": 1085,
+    "Issue": "Teams chat history not syncing across devices.",
+    "Status": "Resolved",
+    "Resolution": "Toggled sync settings and relogged into account, history synced.",
+    "DateOpened": "2023-10-07",
+    "DateClosed": "2023-10-09"
+  },
+  {
+    "TicketID": 1086,
+    "Issue": "Software installation request (Project software needed).",
+    "Status": "Resolved",
+    "Resolution": "Installed requested software after verifying license.",
+    "DateOpened": "2023-12-25",
+    "DateClosed": "2023-12-26"
+  },
+  {
+    "TicketID": 1087,
+    "Issue": "Browser hijacked by adware (pop-ups).",
+    "Status": "Resolved",
+    "Resolution": "Ran anti-malware, reset browser settings.",
+    "DateOpened": "2024-01-20",
+    "DateClosed": "2024-01-20"
+  },
+  {
+    "TicketID": 1088,
+    "Issue": "User George: Point-of-sale terminal offline.",
+    "Status": "Resolved",
+    "Resolution": "Rebooted network router at retail location, POS back online.",
+    "DateOpened": "2024-05-20",
+    "DateClosed": "2024-05-27"
+  },
+  {
+    "TicketID": 1089,
+    "Issue": "Disk space low on server.",
+    "Status": "Resolved",
+    "Resolution": "Cleared logs and temporary files, extended storage.",
+    "DateOpened": "2023-04-20",
+    "DateClosed": "2023-04-27"
+  },
+  {
+    "TicketID": 1090,
+    "Issue": "Access to old legacy app needed.",
+    "Status": "Resolved",
+    "Resolution": "Installed legacy client and created credentials, user has access.",
+    "DateOpened": "2024-09-15",
+    "DateClosed": "2024-09-25"
+  },
+  {
+    "TicketID": 1091,
+    "Issue": "VPN certificate expired.",
+    "Status": "Resolved",
+    "Resolution": "Updated VPN server certificate, users can connect again.",
+    "DateOpened": "2023-08-14",
+    "DateClosed": "2023-08-16"
+  },
+  {
+    "TicketID": 1092,
+    "Issue": "Mobile device email setup.",
+    "Status": "Resolved",
+    "Resolution": "Configured company email on user's phone via Exchange.",
+    "DateOpened": "2023-03-31",
+    "DateClosed": "2023-04-03"
+  },
+  {
+    "TicketID": 1093,
+    "Issue": "User Oliver: Label printer not working.",
+    "Status": "Resolved",
+    "Resolution": "Installed correct label printer driver, tested ok.",
+    "DateOpened": "2024-01-29",
+    "DateClosed": "2024-02-09"
+  },
+  {
+    "TicketID": 1094,
+    "Issue": "Computers not getting IP addresses (DHCP issue).",
+    "Status": "Resolved",
+    "Resolution": "Rebooted DHCP server, clients obtaining IP now.",
+    "DateOpened": "2024-11-02",
+    "DateClosed": "2024-11-12"
+  },
+  {
+    "TicketID": 1095,
+    "Issue": "User can't send or receive external emails.",
+    "Status": "Resolved",
+    "Resolution": "Fixed misconfigured Exchange connector, external mail flows.",
+    "DateOpened": "2023-09-17",
+    "DateClosed": "2023-09-28"
+  },
+  {
+    "TicketID": 1096,
+    "Issue": "Software license transfer needed.",
+    "Status": "Resolved",
+    "Resolution": "Deactivated license on old machine, activated on new machine.",
+    "DateOpened": "2024-08-14",
+    "DateClosed": "2024-08-20"
+  },
+  {
+    "TicketID": 1097,
+    "Issue": "Application license expired.",
+    "Status": "Resolved",
+    "Resolution": "Renewed license key and updated in system.",
+    "DateOpened": "2023-04-08",
+    "DateClosed": "2023-04-18"
+  },
+  {
+    "TicketID": 1098,
+    "Issue": "User Steve: Excel macro won't run.",
+    "Status": "Resolved",
+    "Resolution": "Enabled macro settings, updated macro code references.",
+    "DateOpened": "2023-05-26",
+    "DateClosed": "2023-06-09"
+  },
+  {
+    "TicketID": 1099,
+    "Issue": "User Oliver: Intermittent email delivery delays.",
+    "Status": "Resolved",
+    "Resolution": "Checked Exchange queue, removed offending message, queue normal.",
+    "DateOpened": "2024-08-25",
+    "DateClosed": "2024-09-01"
+  },
+  {
+    "TicketID": 1100,
+    "Issue": "VPN not connecting.",
+    "Status": "Resolved",
+    "Resolution": "Restarted VPN service on server, user updated client config.",
+    "DateOpened": "2024-03-02",
+    "DateClosed": "2024-03-08"
+  },
+  {
+    "TicketID": 1101,
+    "Issue": "Printer jam error.",
+    "Status": "Resolved",
+    "Resolution": "Cleared paper jam from tray 2, printer back online.",
+    "DateOpened": "2024-03-28",
+    "DateClosed": "2024-04-04"
+  },
+  {
+    "TicketID": 1102,
+    "Issue": "User Paula: Recurring printer jam issues.",
+    "Status": "Resolved",
+    "Resolution": "Scheduled regular maintenance and replaced rollers.",
+    "DateOpened": "2023-07-06",
+    "DateClosed": "2023-07-07"
+  },
+  {
+    "TicketID": 1103,
+    "Issue": "User cannot access database.",
+    "Status": "Resolved",
+    "Resolution": "Granted appropriate database permissions, user can connect now.",
+    "DateOpened": "2024-03-03",
+    "DateClosed": "2024-03-12"
+  },
+  {
+    "TicketID": 1104,
+    "Issue": "Antivirus alert (virus detected on PC).",
+    "Status": "Resolved",
+    "Resolution": "Scanned system with antivirus, removed threats, updated definitions.",
+    "DateOpened": "2024-02-23",
+    "DateClosed": "2024-03-10"
+  },
+  {
+    "TicketID": 1105,
+    "Issue": "User Steve: Laptop keyboard letters sticking.",
+    "Status": "Resolved",
+    "Resolution": "Cleaned under keycaps, keys no longer sticking.",
+    "DateOpened": "2023-08-27",
+    "DateClosed": "2023-09-05"
+  },
+  {
+    "TicketID": 1106,
+    "Issue": "User requests distribution list creation.",
+    "Status": "Resolved",
+    "Resolution": "Created distribution list and added members.",
+    "DateOpened": "2023-08-02",
+    "DateClosed": "2023-08-04"
+  },
+  {
+    "TicketID": 1107,
+    "Issue": "Laptop stuck on Windows update.",
+    "Status": "Resolved",
+    "Resolution": "Booted to recovery, rolled back update, then updated successfully.",
+    "DateOpened": "2023-10-28",
+    "DateClosed": "2023-11-08"
+  },
+  {
+    "TicketID": 1108,
+    "Issue": "Software crash when printing.",
+    "Status": "Resolved",
+    "Resolution": "Updated printer driver and patched application, resolved crash.",
+    "DateOpened": "2024-05-24",
+    "DateClosed": "2024-06-03"
+  },
+  {
+    "TicketID": 1109,
+    "Issue": "Outlook send/receive error.",
+    "Status": "Resolved",
+    "Resolution": "Removed large stuck email from Outbox, mail flow normal.",
+    "DateOpened": "2023-06-24",
+    "DateClosed": "2023-07-03"
+  },
+  {
+    "TicketID": 1110,
+    "Issue": "VPN not connecting.",
+    "Status": "Resolved",
+    "Resolution": "Restarted VPN service on server, user updated client config.",
+    "DateOpened": "2024-03-13",
+    "DateClosed": "2024-03-21"
+  },
+  {
+    "TicketID": 1111,
+    "Issue": "User Bob: Excel file locked by another user (shared file on server).",
+    "Status": "Resolved",
+    "Resolution": "Closed orphaned Excel process on server, file unlocked.",
+    "DateOpened": "2024-07-12",
+    "DateClosed": "2024-07-22"
+  },
+  {
+    "TicketID": 1112,
+    "Issue": "Request for admin permissions for software.",
+    "Status": "Resolved",
+    "Resolution": "Granted temporary admin rights after approval, then revoked.",
+    "DateOpened": "2024-09-04",
+    "DateClosed": "2024-09-05"
+  },
+  {
+    "TicketID": 1113,
+    "Issue": "Laptop hinge broken.",
+    "Status": "Resolved",
+    "Resolution": "Sent laptop for repair, replaced top cover and hinges.",
+    "DateOpened": "2023-03-18",
+    "DateClosed": "2023-03-20"
+  },
+  {
+    "TicketID": 1114,
+    "Issue": "Email marked as spam for an important contact.",
+    "Status": "Resolved",
+    "Resolution": "Adjusted spam filter settings and whitelisted sender.",
+    "DateOpened": "2023-07-14",
+    "DateClosed": "2023-07-16"
+  },
+  {
+    "TicketID": 1115,
+    "Issue": "Server low on disk space.",
+    "Status": "Resolved",
+    "Resolution": "Cleared logs and temporary files, extended storage.",
+    "DateOpened": "2024-11-11",
+    "DateClosed": "2024-11-25"
+  },
+  {
+    "TicketID": 1116,
+    "Issue": "Software not responding often.",
+    "Status": "Resolved",
+    "Resolution": "Installed software patch from vendor, fixed stability issues.",
+    "DateOpened": "2024-07-31",
+    "DateClosed": "2024-08-11"
+  },
+  {
+    "TicketID": 1117,
+    "Issue": "User cannot access HR system.",
+    "Status": "Resolved",
+    "Resolution": "Granted HR system access.",
+    "DateOpened": "2023-10-19",
+    "DateClosed": "2023-10-22"
+  },
+  {
+    "TicketID": 1118,
+    "Issue": "Laptop out-of-warranty repair needed.",
+    "Status": "Resolved",
+    "Resolution": "Coordinated with vendor for repair, provided loaner laptop.",
+    "DateOpened": "2024-01-01",
+    "DateClosed": "2024-01-11"
+  },
+  {
+    "TicketID": 1119,
+    "Issue": "Employees on second floor experiencing network outage.",
+    "Status": "Resolved",
+    "Resolution": "Replaced failed network switch, network restored.",
+    "DateOpened": "2023-02-20",
+    "DateClosed": "2023-03-05"
+  },
+  {
+    "TicketID": 1120,
+    "Issue": "User cannot access SaaS tool (access request).",
+    "Status": "Resolved",
+    "Resolution": "Provisioned SaaS account, assigned license.",
+    "DateOpened": "2024-06-13",
+    "DateClosed": "2024-06-16"
+  },
+  {
+    "TicketID": 1121,
+    "Issue": "Printer printing random characters.",
+    "Status": "Resolved",
+    "Resolution": "Cleared print spooler and updated driver, prints correctly.",
+    "DateOpened": "2023-07-31",
+    "DateClosed": "2023-08-02"
+  },
+  {
+    "TicketID": 1122,
+    "Issue": "Laptop not booting.",
+    "Status": "Resolved",
+    "Resolution": "Laptop battery dead, replaced battery.",
+    "DateOpened": "2024-09-07",
+    "DateClosed": "2024-09-19"
+  },
+  {
+    "TicketID": 1123,
+    "Issue": "Employee George cannot access shared drive.",
+    "Status": "Resolved",
+    "Resolution": "Permissions issue, added user to correct group, regained access.",
+    "DateOpened": "2023-05-04",
+    "DateClosed": "2023-05-14"
+  },
+  {
+    "TicketID": 1124,
+    "Issue": "User Paula: Desktop computer not booting.",
+    "Status": "Resolved",
+    "Resolution": "Power cable was unplugged; reconnected cable and booted successfully.",
+    "DateOpened": "2023-05-15",
+    "DateClosed": "2023-05-23"
+  },
+  {
+    "TicketID": 1125,
+    "Issue": "User Mike: Cannot connect to shared printer.",
+    "Status": "Resolved",
+    "Resolution": "Reinstalled printer on user PC, connected to network queue.",
+    "DateOpened": "2024-11-21",
+    "DateClosed": "2024-12-01"
+  },
+  {
+    "TicketID": 1126,
+    "Issue": "Employee Steve cannot access shared drive.",
+    "Status": "Resolved",
+    "Resolution": "Permissions issue, added user to correct group, regained access.",
+    "DateOpened": "2023-06-08",
+    "DateClosed": "2023-06-12"
+  },
+  {
+    "TicketID": 1127,
+    "Issue": "User can't receive external emails.",
+    "Status": "Resolved",
+    "Resolution": "Fixed mail flow settings for external domain.",
+    "DateOpened": "2023-08-06",
+    "DateClosed": "2023-08-14"
+  },
+  {
+    "TicketID": 1128,
+    "Issue": "New SaaS tool account request.",
+    "Status": "Resolved",
+    "Resolution": "Created user account in SaaS platform and provided credentials.",
+    "DateOpened": "2024-08-07",
+    "DateClosed": "2024-08-13"
+  },
+  {
+    "TicketID": 1129,
+    "Issue": "User cannot access shared drive.",
+    "Status": "Resolved",
+    "Resolution": "Permissions issue, added user to correct group, regained access.",
+    "DateOpened": "2024-03-06",
+    "DateClosed": "2024-03-13"
+  },
+  {
+    "TicketID": 1130,
+    "Issue": "User Kevin: Email sends duplicate messages.",
+    "Status": "Resolved",
+    "Resolution": "Cleared outbox and reset email settings, no more duplicates.",
+    "DateOpened": "2024-02-06",
+    "DateClosed": "2024-02-10"
+  },
+  {
+    "TicketID": 1131,
+    "Issue": "User cannot print to network printer on 3rd floor (jobs stuck).",
+    "Status": "Resolved",
+    "Resolution": "Cleared spooler and restarted printer, jobs printed.",
+    "DateOpened": "2023-12-03",
+    "DateClosed": "2023-12-04"
+  },
+  {
+    "TicketID": 1132,
+    "Issue": "Laptop making grinding noise.",
+    "Status": "Resolved",
+    "Resolution": "Replaced failing hard drive with SSD, noise gone.",
+    "DateOpened": "2023-11-07",
+    "DateClosed": "2023-11-15"
+  },
+  {
+    "TicketID": 1133,
+    "Issue": "Access card not working.",
+    "Status": "Resolved",
+    "Resolution": "Reactivated user's access card in system.",
+    "DateOpened": "2023-05-30",
+    "DateClosed": "2023-06-14"
+  },
+  {
+    "TicketID": 1134,
+    "Issue": "Cannot scan from printer to email.",
+    "Status": "Resolved",
+    "Resolution": "Configured scanner email settings, scanning now works.",
+    "DateOpened": "2023-07-21",
+    "DateClosed": "2023-07-28"
+  },
+  {
+    "TicketID": 1135,
+    "Issue": "Assistive tech request for disabled employee.",
+    "Status": "Resolved",
+    "Resolution": "Provided ergonomic keyboard and trackball mouse.",
+    "DateOpened": "2024-05-04",
+    "DateClosed": "2024-05-15"
+  },
+  {
+    "TicketID": 1136,
+    "Issue": "User Hannah: Can't remote desktop into server.",
+    "Status": "Resolved",
+    "Resolution": "Restarted Remote Desktop service, user can now connect.",
+    "DateOpened": "2024-02-18",
+    "DateClosed": "2024-02-25"
+  },
+  {
+    "TicketID": 1137,
+    "Issue": "Projector in conference room not working.",
+    "Status": "Resolved",
+    "Resolution": "Replaced HDMI cable.",
+    "DateOpened": "2024-10-06",
+    "DateClosed": "2024-10-10"
+  },
+  {
+    "TicketID": 1138,
+    "Issue": "User cannot access database.",
+    "Status": "Resolved",
+    "Resolution": "Granted appropriate database permissions, user can connect now.",
+    "DateOpened": "2024-12-06",
+    "DateClosed": "2024-12-16"
+  },
+  {
+    "TicketID": 1139,
+    "Issue": "Time zone wrong on computer.",
+    "Status": "Resolved",
+    "Resolution": "Set correct time zone and synced time.",
+    "DateOpened": "2024-07-05",
+    "DateClosed": "2024-07-08"
+  },
+  {
+    "TicketID": 1140,
+    "Issue": "Multiple monitors setup request.",
+    "Status": "Resolved",
+    "Resolution": "Provided docking station and cables for dual monitors, configured display settings.",
+    "DateOpened": "2023-12-10",
+    "DateClosed": "2023-12-22"
+  },
+  {
+    "TicketID": 1141,
+    "Issue": "Laptop audio not working.",
+    "Status": "Resolved",
+    "Resolution": "Updated audio drivers, audio working again.",
+    "DateOpened": "2023-06-01",
+    "DateClosed": "2023-06-03"
+  },
+  {
+    "TicketID": 1142,
+    "Issue": "Outlook search not working.",
+    "Status": "Resolved",
+    "Resolution": "Reindexed Outlook search, functionality restored.",
+    "DateOpened": "2023-01-24",
+    "DateClosed": "2023-02-03"
+  },
+  {
+    "TicketID": 1143,
+    "Issue": "Software requests admin rights to run.",
+    "Status": "Resolved",
+    "Resolution": "Configured app to run as admin via compatibility settings.",
+    "DateOpened": "2023-02-13",
+    "DateClosed": "2023-02-14"
+  },
+  {
+    "TicketID": 1144,
+    "Issue": "User cannot open attachments in Outlook.",
+    "Status": "Resolved",
+    "Resolution": "Cleared Outlook secure temp folder, attachments open now.",
+    "DateOpened": "2024-02-19",
+    "DateClosed": "2024-03-01"
+  },
+  {
+    "TicketID": 1145,
+    "Issue": "Confidential file access request.",
+    "Status": "Resolved",
+    "Resolution": "Verified approval and granted file access.",
+    "DateOpened": "2023-11-19",
+    "DateClosed": "2023-12-01"
+  },
+  {
+    "TicketID": 1146,
+    "Issue": "Employee Laura cannot print to network printer (printer offline).",
+    "Status": "Resolved",
+    "Resolution": "Printer was turned off; turned it on and configured driver, now working.",
+    "DateOpened": "2023-09-02",
+    "DateClosed": "2023-09-06"
+  },
+  {
+    "TicketID": 1147,
+    "Issue": "Laptop fan loud.",
+    "Status": "Resolved",
+    "Resolution": "Cleaned out dust from fan, noise reduced.",
+    "DateOpened": "2023-10-13",
+    "DateClosed": "2023-10-18"
+  },
+  {
+    "TicketID": 1148,
+    "Issue": "User Nina: Suspicious phishing email reported.",
+    "Status": "Resolved",
+    "Resolution": "Blocked sender and removed email, educated user on phishing.",
+    "DateOpened": "2024-09-27",
+    "DateClosed": "2024-09-29"
+  },
+  {
+    "TicketID": 1149,
+    "Issue": "Shared mailbox access needed.",
+    "Status": "Resolved",
+    "Resolution": "Granted user access to requested shared mailbox.",
+    "DateOpened": "2023-07-19",
+    "DateClosed": "2023-07-26"
+  },
+  {
+    "TicketID": 1150,
+    "Issue": "Laptop stolen, remote wipe needed.",
+    "Status": "Resolved",
+    "Resolution": "Performed remote wipe via MDM and locked account credentials.",
+    "DateOpened": "2024-06-04",
+    "DateClosed": "2024-06-10"
+  },
+  {
+    "TicketID": 1151,
+    "Issue": "Computer running very slowly.",
+    "Status": "Closed",
+    "Resolution": "Ran cleanup, removed temporary files, increased memory.",
+    "DateOpened": "2023-08-31",
+    "DateClosed": "2023-09-13"
+  },
+  {
+    "TicketID": 1152,
+    "Issue": "Laptop BIOS password lost.",
+    "Status": "Closed",
+    "Resolution": "Used vendor master key to reset BIOS password.",
+    "DateOpened": "2024-10-14",
+    "DateClosed": "2024-10-20"
+  },
+  {
+    "TicketID": 1153,
+    "Issue": "Employees unable to connect to network (floor 2).",
+    "Status": "Closed",
+    "Resolution": "Replaced failed network switch, network restored.",
+    "DateOpened": "2024-04-07",
+    "DateClosed": "2024-04-17"
+  },
+  {
+    "TicketID": 1154,
+    "Issue": "Zoom/Teams camera not working.",
+    "Status": "Closed",
+    "Resolution": "Updated camera driver and privacy settings, camera works.",
+    "DateOpened": "2024-08-18",
+    "DateClosed": "2024-08-28"
+  },
+  {
+    "TicketID": 1155,
+    "Issue": "User cannot access SaaS tool.",
+    "Status": "Closed",
+    "Resolution": "Provisioned SaaS account, assigned license.",
+    "DateOpened": "2024-01-22",
+    "DateClosed": "2024-02-05"
+  },
+  {
+    "TicketID": 1156,
+    "Issue": "User cannot access shared drive.",
+    "Status": "Closed",
+    "Resolution": "Permissions issue, added user to correct group, regained access.",
+    "DateOpened": "2023-05-11",
+    "DateClosed": "2023-05-21"
+  },
+  {
+    "TicketID": 1157,
+    "Issue": "Chat app notifications not working.",
+    "Status": "Closed",
+    "Resolution": "Reinstalled app, enabled notifications.",
+    "DateOpened": "2023-01-02",
+    "DateClosed": "2023-01-12"
+  },
+  {
+    "TicketID": 1158,
+    "Issue": "User requests distribution list creation.",
+    "Status": "Closed",
+    "Resolution": "Created distribution list and added members.",
+    "DateOpened": "2024-05-08",
+    "DateClosed": "2024-05-18"
+  },
+  {
+    "TicketID": 1159,
+    "Issue": "Employee Oliver cannot save to network folder.",
+    "Status": "Closed",
+    "Resolution": "Corrected folder permissions, user can save now.",
+    "DateOpened": "2024-10-24",
+    "DateClosed": "2024-10-28"
+  },
+  {
+    "TicketID": 1160,
+    "Issue": "Data import script failing.",
+    "Status": "Closed",
+    "Resolution": "Corrected CSV format and encoding, script succeeded.",
+    "DateOpened": "2023-05-28",
+    "DateClosed": "2023-06-14"
+  },
+  {
+    "TicketID": 1161,
+    "Issue": "Laptop overheats frequently.",
+    "Status": "Closed",
+    "Resolution": "Cleaned fans and vents, updated BIOS controlling fan speeds.",
+    "DateOpened": "2023-03-01",
+    "DateClosed": "2023-03-15"
+  },
+  {
+    "TicketID": 1162,
+    "Issue": "Browser extension required for web app.",
+    "Status": "Closed",
+    "Resolution": "Installed extension and added to allowlist.",
+    "DateOpened": "2023-01-29",
+    "DateClosed": "2023-02-02"
+  },
+  {
+    "TicketID": 1163,
+    "Issue": "Employee Rachel cannot connect to WiFi (remote office).",
+    "Status": "Closed",
+    "Resolution": "Reset network settings on phone, reconnected to WiFi.",
+    "DateOpened": "2024-03-14",
+    "DateClosed": "2024-03-18"
+  },
+  {
+    "TicketID": 1164,
+    "Issue": "Trial software expired.",
+    "Status": "Closed",
+    "Resolution": "Purchased license and updated software activation.",
+    "DateOpened": "2023-09-29",
+    "DateClosed": "2023-10-09"
+  },
+  {
+    "TicketID": 1165,
+    "Issue": "Employees getting too many spam emails.",
+    "Status": "Closed",
+    "Resolution": "Tightened spam filter settings, significantly reduced spam.",
+    "DateOpened": "2023-11-29",
+    "DateClosed": "2023-12-06"
+  },
+  {
+    "TicketID": 1166,
+    "Issue": "Mobile app cannot access corporate data.",
+    "Status": "Closed",
+    "Resolution": "Updated app permissions and security profile.",
+    "DateOpened": "2023-02-01",
+    "DateClosed": "2023-02-12"
+  },
+  {
+    "TicketID": 1167,
+    "Issue": "Database access error for user.",
+    "Status": "Closed",
+    "Resolution": "Granted appropriate database permissions, user can query now.",
+    "DateOpened": "2023-08-19",
+    "DateClosed": "2023-08-27"
+  },
+  {
+    "TicketID": 1168,
+    "Issue": "Laptop making grinding noise.",
+    "Status": "Closed",
+    "Resolution": "Replaced failing HDD with SSD, noise gone, performance improved.",
+    "DateOpened": "2024-06-09",
+    "DateClosed": "2024-06-12"
+  },
+  {
+    "TicketID": 1169,
+    "Issue": "User George: Browser hijacked by adware.",
+    "Status": "Closed",
+    "Resolution": "Ran anti-malware, removed adware, cleaned browser.",
+    "DateOpened": "2023-08-12",
+    "DateClosed": "2023-08-18"
+  },
+  {
+    "TicketID": 1170,
+    "Issue": "Internal application login issues.",
+    "Status": "Closed",
+    "Resolution": "Reset application password, user regained access.",
+    "DateOpened": "2023-02-26",
+    "DateClosed": "2023-03-07"
+  },
+  {
+    "TicketID": 1171,
+    "Issue": "User requests data export from system.",
+    "Status": "Closed",
+    "Resolution": "Exported data to CSV and provided to requester.",
+    "DateOpened": "2024-06-25",
+    "DateClosed": "2024-07-02"
+  },
+  {
+    "TicketID": 1172,
+    "Issue": "User cannot access building after hours.",
+    "Status": "Closed",
+    "Resolution": "Updated access card permissions for after-hours.",
+    "DateOpened": "2024-05-12",
+    "DateClosed": "2024-05-25"
+  },
+  {
+    "TicketID": 1173,
+    "Issue": "Mobile device lost - remote wipe needed.",
+    "Status": "Closed",
+    "Resolution": "Sent wipe command via MDM, phone wiped and locked.",
+    "DateOpened": "2024-07-24",
+    "DateClosed": "2024-08-03"
+  },
+  {
+    "TicketID": 1174,
+    "Issue": "User cannot connect to VPN after password change.",
+    "Status": "Closed",
+    "Resolution": "Updated saved VPN password, reconnected successfully.",
+    "DateOpened": "2023-05-01",
+    "DateClosed": "2023-05-09"
+  },
+  {
+    "TicketID": 1175,
+    "Issue": "Assistive tech request for disabled employee.",
+    "Status": "Closed",
+    "Resolution": "Provided specialized keyboard/mouse per request.",
+    "DateOpened": "2023-07-02",
+    "DateClosed": "2023-07-14"
+  },
+  {
+    "TicketID": 1176,
+    "Issue": "Cannot open certain websites (intranet access).",
+    "Status": "Closed",
+    "Resolution": "Checked DNS and proxy, fixed misconfiguration.",
+    "DateOpened": "2024-02-04",
+    "DateClosed": "2024-02-09"
+  },
+  {
+    "TicketID": 1177,
+    "Issue": "File accidentally deleted.",
+    "Status": "Closed",
+    "Resolution": "Restored file from last backup.",
+    "DateOpened": "2023-01-20",
+    "DateClosed": "2023-01-28"
+  },
+  {
+    "TicketID": 1178,
+    "Issue": "Software update causing errors.",
+    "Status": "Closed",
+    "Resolution": "Rolled back update and deferred until fix is available.",
+    "DateOpened": "2024-08-23",
+    "DateClosed": "2024-08-24"
+  },
+  {
+    "TicketID": 1179,
+    "Issue": "Computers running slow.",
+    "Status": "Closed",
+    "Resolution": "Ran cleanup, removed temporary files, increased memory.",
+    "DateOpened": "2023-12-27",
+    "DateClosed": "2024-01-09"
+  },
+  {
+    "TicketID": 1180,
+    "Issue": "System backup restore needed (file recovery).",
+    "Status": "Closed",
+    "Resolution": "Restored file from backup system to user folder.",
+    "DateOpened": "2023-06-20",
+    "DateClosed": "2023-06-30"
+  },
+  {
+    "TicketID": 1181,
+    "Issue": "Printer out of toner.",
+    "Status": "Closed",
+    "Resolution": "Replaced toner cartridge.",
+    "DateOpened": "2024-12-08",
+    "DateClosed": "2024-12-15"
+  },
+  {
+    "TicketID": 1182,
+    "Issue": "Ex-employee account not disabled.",
+    "Status": "Closed",
+    "Resolution": "Disabled account and revoked access as per offboarding.",
+    "DateOpened": "2023-03-09",
+    "DateClosed": "2023-03-18"
+  },
+  {
+    "TicketID": 1183,
+    "Issue": "User Ian: Slow network in Operations department.",
+    "Status": "Closed",
+    "Resolution": "Rebooted network switch, network speed normalized.",
+    "DateOpened": "2023-09-07",
+    "DateClosed": "2023-09-17"
+  },
+  {
+    "TicketID": 1184,
+    "Issue": "Outlook not syncing email.",
+    "Status": "Closed",
+    "Resolution": "Reconfigured mail profile, fixed sync.",
+    "DateOpened": "2023-08-21",
+    "DateClosed": "2023-08-23"
+  },
+  {
+    "TicketID": 1185,
+    "Issue": "Users cannot connect to intranet in Chrome.",
+    "Status": "Closed",
+    "Resolution": "Advised to use IE compatibility mode for intranet site.",
+    "DateOpened": "2023-02-24",
+    "DateClosed": "2023-03-06"
+  },
+  {
+    "TicketID": 1186,
+    "Issue": "Printer queue stuck after power outage.",
+    "Status": "Closed",
+    "Resolution": "Cleared spooler, restarted printer, jobs printed.",
+    "DateOpened": "2024-04-23",
+    "DateClosed": "2024-04-23"
+  },
+  {
+    "TicketID": 1187,
+    "Issue": "User cannot print in color.",
+    "Status": "Closed",
+    "Resolution": "Replaced color cartridge and updated print settings.",
+    "DateOpened": "2024-10-02",
+    "DateClosed": "2024-10-08"
+  },
+  {
+    "TicketID": 1188,
+    "Issue": "Employees unable to print to network printer (HQ office).",
+    "Status": "Closed",
+    "Resolution": "Restarted print spooler and power-cycled printer, printing restored.",
+    "DateOpened": "2023-11-03",
+    "DateClosed": "2023-11-06"
+  },
+  {
+    "TicketID": 1189,
+    "Issue": "Data sync issue between devices.",
+    "Status": "Closed",
+    "Resolution": "Checked cloud sync settings, re-authenticated device.",
+    "DateOpened": "2023-12-01",
+    "DateClosed": "2023-12-10"
+  },
+  {
+    "TicketID": 1190,
+    "Issue": "Access to team share requested.",
+    "Status": "Closed",
+    "Resolution": "Added user to team share permissions.",
+    "DateOpened": "2023-04-29",
+    "DateClosed": "2023-05-03"
+  },
+  {
+    "TicketID": 1191,
+    "Issue": "User Ian: Poor call quality on VoIP calls.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-02-09",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1192,
+    "Issue": "User cannot connect to WiFi network.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-17",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1193,
+    "Issue": "User Fiona: Account locked out after password change.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-05-14",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1194,
+    "Issue": "Database migration causing login errors.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-07",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1195,
+    "Issue": "User cannot update software due to admin rights.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-04-02",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1196,
+    "Issue": "Multiple users report slow internet in Office B.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-30",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1197,
+    "Issue": "New employee onboarding - account creation pending.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-04-25",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1198,
+    "Issue": "Software X integration with tool Y failing tests.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-01-19",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1199,
+    "Issue": "User Nina: Frequent disconnects from VPN.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-05",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1200,
+    "Issue": "Office printer replacement - setup in progress.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-04-10",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1201,
+    "Issue": "User Oliver: Shared mailbox setup in progress.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-02-15",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1202,
+    "Issue": "Website reconfiguration causing SSL issues.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-01-30",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1203,
+    "Issue": "User Julia: Scheduled job needs optimization.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-05-07",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1204,
+    "Issue": "Mail server upgrade in progress.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-04-04",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1205,
+    "Issue": "User Bob: Deployment of new CRM pending issues.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-01",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1206,
+    "Issue": "Security audit findings - remediation ongoing.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-01-05",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1207,
+    "Issue": "User Tina: Data backup restoration in progress.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-02-20",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1208,
+    "Issue": "Network reconfiguration (site-to-site VPN) ongoing.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-11",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1209,
+    "Issue": "Company-wide software rollout (staged deployment).",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-01-17",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1210,
+    "Issue": "Employee training for new system (scheduling).",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-05-19",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1211,
+    "Issue": "User reports intermittent sound issues on PC.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-22",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1212,
+    "Issue": "File server migration in progress.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-02-28",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1213,
+    "Issue": "Upgrade of firewall firmware (ongoing).",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-04-07",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1214,
+    "Issue": "User Kevin: Performance testing of new app in progress.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-14",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1215,
+    "Issue": "Deployment of multi-factor authentication (phase 2).",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-05-23",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1216,
+    "Issue": "Employee Laura: Upgrading office PCs to SSD (ongoing).",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-01-12",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1217,
+    "Issue": "Office relocation IT setup (in progress).",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-04-14",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1218,
+    "Issue": "VoIP phones firmware update (ongoing rollout).",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-02-22",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1219,
+    "Issue": "Email server DNS configuration issues being fixed.",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-03-09",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1220,
+    "Issue": "User training program for new hires (IT part).",
+    "Status": "In Progress",
+    "Resolution": null,
+    "DateOpened": "2025-05-01",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1221,
+    "Issue": "Tool access request (project management app).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-04-19",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1222,
+    "Issue": "User cannot print to finance department printer.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-06-01",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1223,
+    "Issue": "User George: Password reset pending approval.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-27",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1224,
+    "Issue": "New VPN setup for remote office (not started).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-30",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1225,
+    "Issue": "Hardware upgrade request (awaiting parts).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-04-22",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1226,
+    "Issue": "User Steve: Account provisioning for new software.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-06",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1227,
+    "Issue": "Conference room A/V upgrade scheduled.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-03-25",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1228,
+    "Issue": "Pending security patch deployment.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-04-16",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1229,
+    "Issue": "User Bob: Outlook mailbox cleanup requested.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-11",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1230,
+    "Issue": "Pending migration to new antivirus platform.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-02-06",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1231,
+    "Issue": "User Nina: New hire equipment setup.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-03",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1232,
+    "Issue": "MFA rollout phase 3 pending start.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-04-28",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1233,
+    "Issue": "User Oliver: Legacy data archival project.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-15",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1234,
+    "Issue": "Network equipment refresh planning.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-03-03",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1235,
+    "Issue": "User Julia: Software license audit (ongoing).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-01-25",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1236,
+    "Issue": "Pending cloud service migration (planning stage).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-02-12",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1237,
+    "Issue": "User Kevin: Monitor upgrade request (in queue).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-01-08",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1238,
+    "Issue": "Helpdesk software upgrade scheduled.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-08",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1239,
+    "Issue": "User Tina: File server access for intern (awaiting approval).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-21",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1240,
+    "Issue": "Printer maintenance kit installation pending.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-03-19",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1241,
+    "Issue": "Employee Paula: CAD software installation request.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-04-12",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1242,
+    "Issue": "Pending review of security logs (alert flagged).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-02-04",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1243,
+    "Issue": "User Hannah: Shared mailbox creation request.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-04-27",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1244,
+    "Issue": "Employee training module update pending.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-03-13",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1245,
+    "Issue": "Remote office network setup (planning).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-02-25",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1246,
+    "Issue": "User Nina: New phone setup (awaiting delivery).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-25",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1247,
+    "Issue": "Legacy server decommission (awaiting approval).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-01-21",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1248,
+    "Issue": "User Bob: Access card replacement request.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-17",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1249,
+    "Issue": "Pending software procurement for team.",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-03-16",
+    "DateClosed": null
+  },
+  {
+    "TicketID": 1250,
+    "Issue": "User Rachel: Request to upgrade laptop RAM (awaiting approval).",
+    "Status": "Open",
+    "Resolution": null,
+    "DateOpened": "2025-05-29",
+    "DateClosed": null
+  }
+]
