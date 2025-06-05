@@ -9,7 +9,7 @@ python init_users_db.py
 
 pip install openai faiss-cpu numpy
 
-"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"
+
 
 python build_faiss_index.py
 
